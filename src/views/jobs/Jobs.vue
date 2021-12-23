@@ -1,7 +1,9 @@
 <template>
   <h2>Jobs</h2>
-  <div v-for="job in jobs" :key="job.id">
-    <h5>{{ job.title }}</h5>
+  <div v-for="job in jobs" :key="job.id" class="job">
+    <router-link :to="{ name: 'JobDetails', params: { id: job.id } }"
+      ><h5>{{ job.title }}</h5></router-link
+    >
   </div>
 </template>
 
@@ -20,7 +22,16 @@ export default {
 </script>
 
 <style>
-h5 {
+.job h5 {
   font-family: sans-serif;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #444;
+  margin: 10px auto;
+  background: #f4f4f4;
+}
+a {
+  text-decoration: none;
 }
 </style>
