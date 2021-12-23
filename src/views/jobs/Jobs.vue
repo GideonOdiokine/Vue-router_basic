@@ -30,6 +30,7 @@ export default {
   color: #444;
   margin: 10px auto;
   background: #f4f4f4;
+  max-width: 600px;
 }
 a {
   text-decoration: none;
