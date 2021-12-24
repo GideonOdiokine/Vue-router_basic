@@ -27,6 +27,7 @@ const routes = [
     component: JobDetails,
     props: true
   },
+
   // redirect
   {
     path: '/all-jobs',
@@ -34,7 +35,6 @@ const routes = [
   },
 
   // Catchall 404
-
   {
     path: '/:catchAll(.*)',
     name: 'NotFound',
